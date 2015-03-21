@@ -11,7 +11,11 @@
     <div>
     
         <input id="FirstArg" type="text" runat="server" />
-        <asp:DropDownList ID="DropDownList1" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+        <asp:DropDownList ID="DropDownList1" runat="server">
+          <asp:ListItem Selected="True" Value="add">+</asp:ListItem>
+          <asp:ListItem Value="substract">-</asp:ListItem>
+          <asp:ListItem Value="divide">/</asp:ListItem>
+          <asp:ListItem Value="multiply">*</asp:ListItem>
         </asp:DropDownList>
         <input id="SecondArg" type="text" runat="server" />
         <asp:Button ID="Button1" runat="server" Text="Calculate" OnClick="Calculate" />

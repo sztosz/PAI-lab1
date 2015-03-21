@@ -1,41 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Globalization;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace lab1
 {
     public partial class WebForm1 : Page
     {
-        String _calculateMethod = "add";
         protected void Page_Load(object sender, EventArgs e)
         {
-            PopulateDropdownList();
             Label1.Text = " ";
-        }
-
-        void PopulateDropdownList()
-        {
-
-            var items = new List<ListItem>
-            {
-                new ListItem("+", "add"),
-                new ListItem("-", "substract"),
-                new ListItem("/", "divide"),
-                new ListItem("*", "multiply")
-            };
-            DropDownList1.Items.AddRange(items.ToArray());
-        }
-
-        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            _calculateMethod = sender.ToString();
         }
 
         protected void Calculate(object sender, EventArgs e)
         {
-            switch (_calculateMethod)
+            switch (DropDownList1.Text)
             {
                 case "add": Add(); break;
                 case "substract": Substract(); break;

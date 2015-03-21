@@ -7,9 +7,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using System.Web.UI.HtmlControls;
-using System.Web.UI.WebControls;
-
 namespace lab1 {
     
     
@@ -22,7 +19,7 @@ namespace lab1 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected HtmlForm form1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
         /// FirstArg control.
@@ -31,7 +28,7 @@ namespace lab1 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected HtmlInputText FirstArg;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText FirstArg;
         
         /// <summary>
         /// DropDownList1 control.
@@ -40,7 +37,7 @@ namespace lab1 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
         
         /// <summary>
         /// SecondArg control.
@@ -49,7 +46,7 @@ namespace lab1 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected HtmlInputText SecondArg;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText SecondArg;
         
         /// <summary>
         /// Button1 control.
@@ -58,7 +55,7 @@ namespace lab1 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected Button Button1;
+        protected global::System.Web.UI.WebControls.Button Button1;
         
         /// <summary>
         /// Label1 control.
@@ -67,6 +64,6 @@ namespace lab1 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected Label Label1;
+        protected global::System.Web.UI.WebControls.Label Label1;
     }
 }
